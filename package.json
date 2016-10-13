@@ -1,0 +1,25 @@
+{
+  "name": "thezebra-nyc",
+  "version": "1.0.0",
+  "description": "skills assessment for employment with the zebra",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cecileceng/thezebra-nyc.git"
+  },
+  "author": "cecile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cecileceng/thezebra-nyc/issues"
+  },
+  "homepage": "https://github.com/cecileceng/thezebra-nyc#readme",
+  "dependencies": {
+    "less": "^2.7.1"
+  }
+}
