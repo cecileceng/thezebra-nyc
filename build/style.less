@@ -3,18 +3,19 @@
 @header-line-height: 70px;
 @subhead-font-size: 18px;
 @subhead-line-height: 26px;
-@logo-image-height: 30px;
+@logo-image-height: 25px;
 @font-family: "Gotham", Verdana, sans-serif;
 @background-color: white;
 
-@breadcrumb-font-size: 18px;
+@breadcrumb-font-size: 14px;
 @body-font-color: #4A4A4A;
 @nav-title-font-size: 26px;
 @nav-button-color: #1CBEEC;
 @navbar-width: 1000px;
 @navbar-icon-box-width: 20%;
 @nav-button-z-index: 1;
-@navbar-icon-image-width: 50%;  
+@navbar-icon-image-width: 50%; 
+@body-font-size: 16px; 
 
 @section-header-font-size: 42px;
 @caption-font-size: 14px;
@@ -28,31 +29,111 @@
 
 @footer-font-size: 16px;
 
-.main-container {
+body {
 	background-color: @background-color;
+	color: @body-font-color;
+	font-size: @body-font-size;
+}
+
+ul {
+	li {
+	display: inline-block;
+	zoom:1;
+	*display:inline; /* this fix is needed for IE7- */
+	}
+}
+
+.main-container {
 	font-family: @font-family;
 }
 
 .header {
-	text-align: center;
+	text-align: left;
 	color: @header-font-color;
 	background-image: url(./../img/bg-nyc.png);
 	background-repeat: no-repeat;
 	height: 837px;
 	img {
 		height: @logo-image-height;
-		align-content: left;
+		clear: left;
+		margin: 30px 0px 10px 100px;
 	}
 	h1 {
+		margin: 300px 0px 10px 100px;
 		font-size: @header-font-size;
 		line-height: @header-line-height;
 	}
 	h5 {
+		margin: 30px 25% 10px 100px;
 		font-size: @subhead-font-size;
 		line-height: @subhead-line-height;
+		font-weight: 100;
 	}
 }
 
+.breadcrumbs {
+	margin: 10px 0px 10px 100px;
+	font-size: @breadcrumb-font-size;
+}
 
+.category-select {
+	font-size: @nav-title-font-size;
+	text-align: center;
+	img {
+		height: 50px;
+	}
+}
 
+.section {
+	margin-left: 100px;
+	.subhead {
+		text-align: center;
+		font-size: @section-header-font-size;
+	}
+	.sub-icons {
+		img {
+			height: 25px;
+		}
+		hr {
+			width: 25px;
+			border-color: @nav-button-color;
+		}
+	}
+}
 
+.carousel img {
+	vertical-align: middle;
+}
+
+#carousel-image {
+	width: 300px;
+}
+
+.row {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	content {
+		vertical-align: top;
+	}
+}
+
+/*#airport {
+	color: silver;
+	font-size: @background-text-font-size;
+	z-index: -1;
+}*/
+
+.content {
+	margin: 50px;
+}
+
+.footer {
+	font-size: @footer-font-size;
+	text-align: center; 
+	margin: 60px;
+}
+
+hr {
+	color: silver;
+}
